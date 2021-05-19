@@ -30,5 +30,5 @@ docker rm csvserver
 
 #step 6 
 docker run -d -p 9393:9300 --name test -e CSVSERVER_BORDER=Orange csserver:latest
-curl localhost:9300
+curl localhost:9393
 
