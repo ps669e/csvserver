@@ -1,0 +1,1 @@
+docker run -d -p 9393:9300 --name test -e CSVSERVER_BORDER=Orange csserver:latest
