@@ -10,4 +10,18 @@ services:
 
     environment:
       - CSVSERVER_BORDER=Orange
- 
+
+#Prometheus service
+
+  prometheus:
+    image: prom/prometheus:v2.22.0
+    ports: 
+      - "9090:9090"
+    volumes:
+     - ./prometheus:/etc/prometheus
+     - prometheus-vol:/prometheus
+    command: --web.enable-lifecycle  --config.file=/etc/prometheus/prometheus.yml
+
+volumes:
+  prometheus-vol: 
+

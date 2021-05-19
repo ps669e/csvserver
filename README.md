@@ -33,3 +33,13 @@ docker run -d -p 9393:9300 --name test -e CSVSERVER_BORDER=Orange csserver:lates
 
 curl localhost:9393
 
+Part-2
+#compose file in in repo.
+#ran below command to  bring up service or conainer 
+
+docker-compose up -d 
+
+docker-compose down  #delete or bring down container/service
+
+
+
