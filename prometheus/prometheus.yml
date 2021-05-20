@@ -35,5 +35,5 @@ scrape_configs:
     metrics_path: '/metrics'
 
     static_configs:
-      - targets: ['rdeckdal01.ivanet.net:9393']
+      - targets: ['myhost.xx.xx:9393']
 
